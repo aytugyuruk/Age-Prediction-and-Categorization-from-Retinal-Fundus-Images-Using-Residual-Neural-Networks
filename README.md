@@ -39,7 +39,7 @@ https://ieeexplore.ieee.org/document/11418414
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{yuruk2026retinalage,
+@inproceedings{yuruk2026age,
   title={Age Prediction and Categorization from Retinal Fundus Images Using Residual Neural Networks},
   author={Yürük, Mehmet Aytuğ and Memiş, Abbas},
   booktitle={2026 5th International Informatics and Software Engineering Conference (IISEC)},

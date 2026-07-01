@@ -51,6 +51,7 @@ If you use this work, please cite:
   booktitle={2026 5th International Informatics and Software Engineering Conference (IISEC)},
   pages={628--633},
   year={2026},
+  organization={IEEE},
   doi={10.1109/IISEC69317.2026.11418414}
 }
 

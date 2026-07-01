@@ -34,6 +34,12 @@ https://ieeexplore.ieee.org/document/11418414
 
 ---
 
+## Code
+
+The implementation and trained model weights used in this paper are being prepared for release and will be added to this repository. In the meantime, refer to the paper on IEEE Xplore for full methodological details.
+
+---
+
 ## Citation
 
 If you use this work, please cite:
@@ -47,3 +53,4 @@ If you use this work, please cite:
   year={2026},
   doi={10.1109/IISEC69317.2026.11418414}
 }
+

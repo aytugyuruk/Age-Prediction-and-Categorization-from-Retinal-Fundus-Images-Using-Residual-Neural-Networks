@@ -73,7 +73,16 @@ Prints per-age-category and overall metrics (MAE, accuracy, precision, recall, F
 
 ## Pretrained checkpoints
 
-Not distributed via this repository (checkpoint files range from ~130MB to ~680MB). Pretrained weights will be published on Hugging Face Hub — link to be added here once uploaded.
+Not distributed via this repository (checkpoint files range from ~130MB to ~680MB). All 10 checkpoints (5 architectures × filtered/non-filtered) are hosted on Hugging Face Hub:
+
+**[huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation](https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation)**
+
+```python
+from huggingface_hub import hf_hub_download
+ckpt_path = hf_hub_download("mehmetaytugyuruk/retina-resnet-age-estimation", "resnet101-filtered.pth")
+```
+
+See the model card for the full file list, per-model results, and a loading example.
 
 ## Repository structure
 

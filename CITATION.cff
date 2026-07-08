@@ -1,17 +1,16 @@
 cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
 title: "Age Prediction and Categorization from Retinal Fundus Images Using Residual Neural Networks"
-message: "If you use this work, please cite the associated IEEE paper."
-type: article
-
 authors:
   - family-names: "Yürük"
     given-names: "Mehmet Aytuğ"
+    affiliation: "Istanbul University"
   - family-names: "Memiş"
     given-names: "Abbas"
-
+    affiliation: "Istanbul University"
+date-released: 2026-02-05
+doi: "10.1109/IISEC69317.2026.11418414"
 year: 2026
-doi: 10.1109/IISEC69317.2026.11418414
-
 preferred-citation:
   type: conference-paper
   title: "Age Prediction and Categorization from Retinal Fundus Images Using Residual Neural Networks"
@@ -20,10 +19,10 @@ preferred-citation:
       given-names: "Mehmet Aytuğ"
     - family-names: "Memiş"
       given-names: "Abbas"
-  conference:
-    name: "2026 5th International Informatics and Software Engineering Conference (IISEC)"
+  collection-title: "2026 5th International Informatics and Software Engineering Conference (IISEC)"
   publisher:
     name: "IEEE"
-  pages: "628-633"
+  start: 628
+  end: 633
   year: 2026
-  doi: 10.1109/IISEC69317.2026.11418414
+  doi: "10.1109/IISEC69317.2026.11418414"

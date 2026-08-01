@@ -23,7 +23,12 @@ from sklearn.metrics import mean_absolute_error
 from torch.utils.data import DataLoader, Dataset
 from torchvision import models, transforms
 
-DEVICE = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+if torch.cuda.is_available():
+    DEVICE = torch.device("cuda")
+elif torch.backends.mps.is_available():
+    DEVICE = torch.device("mps")
+else:
+    DEVICE = torch.device("cpu")
 
 MODEL_BUILDERS = {
     "resnet18": (models.resnet18, models.ResNet18_Weights.IMAGENET1K_V1, "small"),

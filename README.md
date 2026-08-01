@@ -1,9 +1,13 @@
 # Retinal Fundus Age Estimation (ResNet)
 
-Official code for:
+**Resources:** [Paper](https://doi.org/10.1109/IISEC69317.2026.11418414) · [Pretrained weights](https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation) · [Paper-to-code mapping](docs/paper-to-code-mapping.md) · [Citation](#citation)
+
+## Publication
 
 > M. A. Yürük and A. Memiş, "Age Prediction and Categorization from Retinal Fundus Images Using Residual Neural Networks," in *2026 5th International Informatics and Software Engineering Conference (IISEC)*, Ankara, Türkiye, 2026, pp. 628–633.
 > DOI: [10.1109/IISEC69317.2026.11418414](https://doi.org/10.1109/IISEC69317.2026.11418414) | IEEE Xplore: [document/11418414](https://ieeexplore.ieee.org/document/11418414)
+
+## Overview
 
 Predicts chronological age from color retinal fundus images using five ResNet variants (ResNet-18/34/50/101/152), and derives an age-category classification (Pediatric / Young Adult / Middle Age / Senior / Elderly) from the regression output.
 
@@ -33,12 +37,15 @@ This repo does not redistribute the images. To reproduce:
 2. Run the preprocessing scripts below to produce the non-filtered and Graham-filtered variants.
 3. Place the results under `ImageFolders/non_filtered_images/` and `ImageFolders/filtered_images/` so the paths in `csvFiles/*/*.csv` resolve correctly (or edit the CSVs to point elsewhere).
 
-## Setup
+## Installation
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+Training and evaluation automatically select CUDA, Apple Metal (MPS), or CPU,
+in that order.
 
 ## Preprocessing
 

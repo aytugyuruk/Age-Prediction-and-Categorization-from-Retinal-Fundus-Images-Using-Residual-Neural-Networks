@@ -1,21 +1,19 @@
 # Retinal Fundus Age Estimation (ResNet)
 
-**Resources:** [Paper](https://doi.org/10.1109/IISEC69317.2026.11418414) · [Pretrained weights](https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation) · [Paper-to-code mapping](docs/paper-to-code-mapping.md) · [Citation](#citation)
+**Resources:** [Pretrained weights](https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation) · [Paper-to-code mapping](docs/paper-to-code-mapping.md) · [Citation](#citation) · [Companion ViT study](https://github.com/mehmetaytugyuruk/retina-vit-age-estimation)
 
 ## Publication
 
-> M. A. Yürük and A. Memiş, "Age Prediction and Categorization from Retinal Fundus Images Using Residual Neural Networks," in *2026 5th International Informatics and Software Engineering Conference (IISEC)*, Ankara, Türkiye, 2026, pp. 628–633.
-> DOI: [10.1109/IISEC69317.2026.11418414](https://doi.org/10.1109/IISEC69317.2026.11418414) | IEEE Xplore: [document/11418414](https://ieeexplore.ieee.org/document/11418414)
+> M. A. Yürük and A. Memiş, "Age Prediction and Categorization from Retinal Fundus Images Using Residual Neural Networks," in *2026 5th International Informatics and Software Engineering Conference (IISEC)*, Ankara, Türkiye, Feb. 2026, pp. 628–633. doi: [10.1109/IISEC69317.2026.11418414](https://doi.org/10.1109/IISEC69317.2026.11418414)
+
+[![DOI](https://img.shields.io/badge/DOI-10.1109%2FIISEC69317.2026.11418414-blue)](https://doi.org/10.1109/IISEC69317.2026.11418414)
+[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-11418414-00629B)](https://ieeexplore.ieee.org/document/11418414)
 
 ## Overview
 
 Predicts chronological age from color retinal fundus images using five ResNet variants (ResNet-18/34/50/101/152), and derives an age-category classification (Pediatric / Young Adult / Middle Age / Senior / Elderly) from the regression output.
 
 A companion study using Vision Transformers on the same dataset is available at [retina-vit-age-estimation](https://github.com/mehmetaytugyuruk/retina-vit-age-estimation).
-
-## Abstract
-
-Accurate estimation of biological age from retinal fundus images has become an important research topic in medical image analysis and computer vision. In this study, we investigate the capability of deep residual neural networks to predict and categorize age from retinal fundus photographs. Multiple ResNet architectures, including ResNet-18, ResNet-34, ResNet-50, ResNet-101, and ResNet-152, were evaluated on a retinal fundus dataset containing nearly 10,000 images. Image preprocessing techniques and label distribution smoothing were applied to address dataset imbalance and improve regression performance. Experimental results show that ResNet-101 achieved the best results. The findings highlight the potential of deep learning methods for automated biological age estimation from retinal fundus images.
 
 ## Results
 
@@ -115,6 +113,7 @@ See [docs/paper-to-code-mapping.md](docs/paper-to-code-mapping.md) for exactly h
   booktitle = {2026 5th International Informatics and Software Engineering Conference (IISEC)},
   pages     = {628--633},
   year      = {2026},
+  address   = {Ankara, Türkiye},
   publisher = {IEEE},
   doi       = {10.1109/IISEC69317.2026.11418414}
 }

@@ -1,4 +1,9 @@
-# Retinal Fundus Age Estimation (ResNet)
+# Retinal Fundus Age Prediction (ResNet)
+
+> [!NOTE]
+> **Retinal Age Prediction research series · Study 01**
+>
+> [Series overview](https://github.com/mehmetaytugyuruk/retinal-age-prediction) · [Study 02: Vision Transformers](https://github.com/mehmetaytugyuruk/retina-vit-age-estimation) · [Study 03: Color spaces](https://github.com/mehmetaytugyuruk/retina-color-spaces-age-prediction)
 
 **Resources:** [Pretrained weights](https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation) · [Paper-to-code mapping](docs/paper-to-code-mapping.md) · [Citation](#citation) · [Companion ViT study](https://github.com/mehmetaytugyuruk/retina-vit-age-estimation)
 
@@ -13,7 +18,7 @@
 
 Predicts chronological age from color retinal fundus images using five ResNet variants (ResNet-18/34/50/101/152), and derives an age-category classification (Pediatric / Young Adult / Middle Age / Senior / Elderly) from the regression output.
 
-A companion study using Vision Transformers on the same dataset is available at [retina-vit-age-estimation](https://github.com/mehmetaytugyuruk/retina-vit-age-estimation).
+A companion study using Vision Transformers on the same dataset is available in the [Vision Transformer study repository](https://github.com/mehmetaytugyuruk/retina-vit-age-estimation).
 
 ## Results
 
@@ -80,7 +85,7 @@ Prints per-age-category and overall metrics (MAE, accuracy, precision, recall, F
 
 Not distributed via this repository (checkpoint files range from ~130MB to ~680MB). All 10 checkpoints (5 architectures × filtered/non-filtered) are hosted on Hugging Face Hub:
 
-**[huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation](https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation)**
+**[Hugging Face checkpoint repository](https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation)**
 
 ```python
 from huggingface_hub import hf_hub_download
